@@ -3,8 +3,9 @@ input.onButtonPressed(Button.A, function () {
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "Robber") {
-        basic.showString("Robber")
-        music.playMelody("C5 - C5 - C5 - C5 - ", 400)
+        for (let index = 0; index < 2108; index++) {
+            music.playMelody("C5 - C5 - C5 - C5 - ", 400)
+        }
     }
 })
 radio.setGroup(42)
