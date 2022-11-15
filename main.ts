@@ -1,9 +1,9 @@
 input.onButtonPressed(Button.A, function () {
-    music.stopMelody(MelodyStopOptions.All)
+    music.stopAllSounds()
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "Robber") {
-        for (let index = 0; index < 2108; index++) {
+        for (let index = 0; index < 20; index++) {
             music.playMelody("C5 - C5 - C5 - C5 - ", 400)
         }
     }
